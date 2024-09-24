@@ -11,7 +11,7 @@ const mail=(email,randomString)=>{
       from: "aravindhan2825@gmail.com",
       to: email,
       subject: "login msg",
-      html: `<p>Click the following link to reset your password: <a href="https://adorable-strudel-15bae0.netlify.app/resetpassword/${randomString}">Reset Password</a></p>`,
+      html: `<p>Click the following link to reset your password: <a href="http://localhost:3000/resetpassword/${randomString}">Reset Password</a></p>`,
     };
     mailTransporter.sendMail(details,(error,info)=>{
         if(error){
